@@ -1,26 +1,120 @@
+/* ---------- General Layout ---------- */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fb;
+  color: #333;
+  line-height: 1.6;
+}
 
-/* Simple responsive style (RTL) */
-:root{
-  --maxw: 980px;
-  --accent: #1a73e8;
+/* ---------- Header ---------- */
+header {
+  background-color: #111827;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
 }
-*{box-sizing:border-box}
-body{font-family: "Noto Naskh Arabic", "Segoe UI", Roboto, Arial, sans-serif; margin:0; background:#f6f8fb; color:#111;}
-.container{max-width:var(--maxw); margin:0 auto; padding:20px;}
-.site-header{background:#0b1220; color:white; padding:20px 0; text-align:center;}
-.logo{margin:0; font-size:28px;}
-.tagline{margin:6px 0 0; opacity:0.9;}
-.main{display:flex; gap:20px;}
-.posts{margin-top:20px;}
-.post{background:white; padding:16px; margin-bottom:12px; border-radius:8px;}
-.post h4{margin:0 0 6px;}
-.post p.meta{font-size:13px; color:#666;}
-.sidebar{margin-top:20px;}
-.widget{background:white; padding:12px; border-radius:8px; margin-bottom:12px;}
-.howto{background:white; padding:16px; border-radius:8px; margin-top:18px;}
-.site-footer{background:#0b1220; color:white; padding:16px 0; text-align:center; margin-top:24px;}
-.single-post{background:white; padding:20px; border-radius:8px;}
-a{color:var(--accent); text-decoration:none;}
-@media(min-width:900px){
-  main.container{display:grid; grid-template-columns: 1fr 320px; gap:24px;}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
 }
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #22d3ee;
+}
+
+/* ---------- Main Section ---------- */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- Posts ---------- */
+.post {
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+}
+
+.post:last-child {
+  border-bottom: none;
+}
+
+.post h2 a {
+  color: #0077cc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.post h2 a:hover {
+  color: #0ea5e9;
+}
+
+.post p {
+  color: #555;
+}
+
+/* ---------- Article ---------- */
+article h2 {
+  color: #0077cc;
+}
+
+article ul, article ol {
+  margin-left: 25px;
+}
+
+article a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: #111827;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 768px) {
+  main {
+    width: 90%;
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  nav a {
+    margin: 0 5px;
+    font-size: 14px;
+  }
+}
+
+
