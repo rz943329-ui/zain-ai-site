@@ -1,0 +1,26 @@
+
+/* Simple responsive style (RTL) */
+:root{
+  --maxw: 980px;
+  --accent: #1a73e8;
+}
+*{box-sizing:border-box}
+body{font-family: "Noto Naskh Arabic", "Segoe UI", Roboto, Arial, sans-serif; margin:0; background:#f6f8fb; color:#111;}
+.container{max-width:var(--maxw); margin:0 auto; padding:20px;}
+.site-header{background:#0b1220; color:white; padding:20px 0; text-align:center;}
+.logo{margin:0; font-size:28px;}
+.tagline{margin:6px 0 0; opacity:0.9;}
+.main{display:flex; gap:20px;}
+.posts{margin-top:20px;}
+.post{background:white; padding:16px; margin-bottom:12px; border-radius:8px;}
+.post h4{margin:0 0 6px;}
+.post p.meta{font-size:13px; color:#666;}
+.sidebar{margin-top:20px;}
+.widget{background:white; padding:12px; border-radius:8px; margin-bottom:12px;}
+.howto{background:white; padding:16px; border-radius:8px; margin-top:18px;}
+.site-footer{background:#0b1220; color:white; padding:16px 0; text-align:center; margin-top:24px;}
+.single-post{background:white; padding:20px; border-radius:8px;}
+a{color:var(--accent); text-decoration:none;}
+@media(min-width:900px){
+  main.container{display:grid; grid-template-columns: 1fr 320px; gap:24px;}
+}
