@@ -1,135 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/x-icon" href="./favicon.ico">
-  <!-- ✅ SEO Meta Tags -->
-<meta name="title" content="Zain AI | Learn AI Tools and Earning Ideas"> 
-<meta name="impact-site-verification" content="37581e27-3b9e-4d03-bd3a-c7e831ac0811">  
-<meta name="description" content="Zain AI par seekhein AI tools, earning methods aur free AI websites bina investment ke. Real earning ideas aur AI knowledge in Urdu."> 
-<meta name="keywords" content="AI se earning, AI tools, free AI earning, Zain AI, AI blog, Pakistan AI blog, ChatGPT, Canva, AI websites, online income">
-<meta name="author" content="Muhammad Zain">
-
-<!-- ✅ Social Media Preview -->
-<meta property="og:title" content="Zain AI | AI se Earning ka Asan Tareeqa">
-<meta property="og:description" content="AI tools aur real earning ideas seekhein bina investment ke. Start your AI journey with Zain AI.">
-<meta property="og:image" content="https://rz943329-ui.github.io/zain-ai-site/logo.png">
-<meta property="og:url" content="https://rz943329-ui.github.io/zain-ai-site/">
-<meta name="twitter:card" content="summary_large_image">
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <title>Zain AI Site - Learn & Earn with AI</title>
-  <meta name="description" content="Zain AI Site - Learn how to earn online with AI tools. Free guides and tutorials for 2025.">
-  <link rel="stylesheet" href="style.css" />
+  <title>Zain AI | Learn AI Tools & Earn Online</title>
+
+  <!-- ✅ SEO & Meta Tags -->
+  <meta name="title" content="Zain AI | Learn AI Tools and Earning Ideas">
+  <meta name="description" content="Zain AI par seekhein AI tools, earning methods aur free AI websites bina investment ke. Real earning ideas aur AI knowledge in Urdu.">
+  <meta name="keywords" content="AI se earning, AI tools, Zain AI, ChatGPT, Canva, Fiverr, Blogging, AI blog Pakistan, online income">
+  <meta name="author" content="Muhammad Zain">
+
+  <!-- ✅ Social Preview -->
+  <meta property="og:title" content="Zain AI | AI se Earning ka Asan Tareeqa">
+  <meta property="og:description" content="AI tools aur real earning ideas seekhein bina investment ke. Start your AI journey with Zain AI.">
+  <meta property="og:image" content="https://rz943329-ui.github.io/zain-ai-site/logo.png">
+  <meta property="og:url" content="https://rz943329-ui.github.io/zain-ai-site/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- ✅ CSS -->
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
-      padding: 0;
-      color: #333;
+      background: #f9fafb;
+      color: #222;
     }
-    header 
-    <img src="./logo.png" alt="Zain AI Logo" width="120">
-{
-      background: #222;
-      color: #fff;
-      padding: 15px 0;
-      text-align: center;
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.4rem;
     }
     nav a {
-      color: #fff;
+      color: white;
       text-decoration: none;
-      margin: 0 10px;
+      margin-left: 15px;
+      font-weight: 500;
     }
-    main {
-      max-width: 800px;
-      margin: 30px auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 70px 20px;
+      background: linear-gradient(135deg, #1f2937, #111827);
+      color: white;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #d1d5db;
+    }
+    .hero button {
+      margin-top: 20px;
+      padding: 10px 25px;
+      background: #3b82f6;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .hero button:hover {
+      background: #2563eb;
+    }
+
+    .posts {
+      max-width: 1000px;
+      margin: 60px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      padding: 0 15px;
     }
     .post {
-      border-bottom: 1px solid #ddd;
-      margin-bottom: 20px;
-      padding-bottom: 15px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      padding: 20px;
+      transition: transform 0.2s ease;
     }
-    .post:last-child {
-      border-bottom: none;
+    .post:hover {
+      transform: translateY(-5px);
     }
     .post h2 {
-      color: #0077cc;
+      color: #111827;
+      font-size: 1.2rem;
     }
+    .post p {
+      color: #4b5563;
+      font-size: 0.95rem;
+    }
+    .post a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
     footer {
+      background: #111827;
+      color: #d1d5db;
       text-align: center;
-      background: #222;
-      color: #fff;
-      padding: 15px;
-      margin-top: 40px;
+      padding: 25px;
+      margin-top: 50px;
+    }
+    footer a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
-  <!-- ✅ Free Visitor Tracker -->
-<script src="https://counter.dev/script.js" data-id="ZAIN-AI-TRACKER" data-utcoffset="5"></script>
 <body>
-  <!-- ✅ Free Visitor Tracker -->
-<script src="https://counter.dev/script.js" data-id="ZAIN-AI-TRACKER" data-utcoffset="5"></script>
   <header>
-    <h1>Zain AI Site</h1>
+    <h1>Zain AI</h1>
     <nav>
-      <a href="index.html">Home</a> |
-      <a href="about.html">About</a> |
-      <a href="contact.html">Contact</a>
+      <a href="#">Home</a>
+      <a href="#">Blogs</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <h2>Latest AI Earning Posts</h2>
+  <section class="hero">
+    <h2>Learn AI Tools & Earn Online</h2>
+    <p>AI se earning seekho — simple steps aur free tools ke sath 2025 me apna career start karo.</p>
+    <button onclick="window.location.href='#blogs'">Start Learning</button>
+  </section>
 
+  <section id="blogs" class="posts">
     <div class="post">
-      <h2><a href="post1.html">AI Tools Se Paise Kaise Kamaye (Basic Guide)</a></h2>
-      <p>Learn how to use AI tools to start earning online for free. This beginner’s guide helps you start your AI journey today!</p>
-      <a href="post1.html">Read More →</a>
+      <h2><a href="post1.html">Top 10 Free AI Tools for Beginners (2025)</a></h2>
+      <p>Best AI tools jo aapko bina investment ke earning start karne me madad karenge.</p>
+      <a href="post1.html">Read More</a>
     </div>
 
     <div class="post">
-      <h2><a href="post2.html">AI Se Online Paise Kaise Kamaye – Free Tools ke Sath (2025 Guide)</a></h2>
-      <p>Discover the top AI tools and strategies to earn money online in 2025 with zero investment. Start learning today!</p>
-      <a href="post2.html">Read More →</a>
+      <h2><a href="post2.html">AI Blogging Se Paise Kaise Kamaye</a></h2>
+      <p>Step-by-step guide for beginners to earn online with AI writing and content tools.</p>
+      <a href="post2.html">Read More</a>
     </div>
-    
-   <div class="post">
-  <h2><a href="post3.html">AI Tools Se Passive Income Kaise Banaye – 2025 Guide</a></h2>
-  <p>Learn the best ways to build passive income using AI tools in 2025 — simple methods that actually work without big investment.</p>
-  <a href="post3.html">Read More</a>
-</div> 
-    
-    <div class="post">
-  <h2><a href="post4.html">AI Se Fiverr Aur Freelancing Par Paise Kaise Kamaye (2025 Guide)</a></h2>
-  <p>Learn how to use AI tools to earn money from Fiverr and freelancing platforms without big investment.</p>
-  <a href="post4.html">Read More</a>
-</div>
 
     <div class="post">
-  <h2><a href="post5.html">Top 5 AI Tools to Start Online Earning Without Investment (2025 Guide)</a></h2>
-  <p>Discover the best 5 AI tools that can help you start earning online for free in 2025 — perfect for beginners who want to learn and grow with AI.</p>
-  <a href="post5.html">Read More</a>
-</div>
+      <h2><a href="post3.html">AI Tools Se Passive Income Kaise Banaye – 2025 Guide</a></h2>
+      <p>Learn easy passive income methods using smart AI tools without big investment.</p>
+      <a href="post3.html">Read More</a>
+    </div>
 
     <div class="post">
-  <h2><a href="post6.html">AI Chatbots Se Online Earning Ka Asan Tareeqa (2025 Guide)</a></h2>
-  <p>Learn how to earn online using AI chatbots like ChatGPT and Gemini — simple and free methods for 2025.</p>
-  <a href="post6.html">Read More</a>
-</div>
+      <h2><a href="post4.html">Fiverr & Freelancing with AI Tools</a></h2>
+      <p>Use AI to boost your freelancing income — perfect for beginners.</p>
+      <a href="post4.html">Read More</a>
+    </div>
 
-  </main>
+    <div class="post">
+      <h2><a href="post5.html">AI Website Banakar Earning Kaise Karein</a></h2>
+      <p>Build your own AI-based website and start monetizing it easily.</p>
+      <a href="post5.html">Read More</a>
+    </div>
+
+    <div class="post">
+      <h2><a href="post6.html">Future of AI Jobs & Online Work in 2025</a></h2>
+      <p>Know which AI jobs will be in demand and how to prepare for them today.</p>
+      <a href="post6.html">Read More</a>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2025 Zain AI Site | All rights reserved.</p>
+    <p>© 2025 Zain AI | All Rights Reserved</p>
+    <p>Follow on <a href="#">YouTube</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a></p>
   </footer>
 </body>
 </html>
 
-      
-  
+
+   
+   
+    
+   
+ 
+
