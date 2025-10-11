@@ -6,307 +6,211 @@
   <title>Zain AI | Learn AI Tools & Earning Ideas</title>
   <link rel="icon" type="image/x-icon" href="./favicon.ico" />
 
-  <!-- SEO Meta Tags -->
-  <meta name="title" content="Zain AI | Learn AI Tools and Earning Ideas">
-  <meta name="description" content="Zain AI par seekhein AI tools, earning methods aur free AI websites bina investment ke. Real earning ideas aur AI knowledge in Urdu."> 
-  <meta name="keywords" content="AI se earning, AI tools, free AI earning, Zain AI, AI blog, ChatGPT, Canva, AI websites, online income, Fiverr affiliate">
-  <meta name="author" content="Muhammad Zain">
+  <meta name="description" content="Zain AI par seekhein AI tools, earning methods aur free AI websites bina investment ke. Real earning ideas aur AI knowledge in Urdu.">
+  <meta name="author" content="Muhammad Zain" />
 
-  <!-- Social Media Preview -->
-  <meta property="og:title" content="Zain AI | AI se Earning ka Asan Tareeqa">
-  <meta property="og:description" content="AI tools aur real earning ideas seekhein bina investment ke. Start your AI journey with Zain AI.">
-  <meta property="og:image" content="https://rz943329-ui.github.io/zain-ai-site/logo.png">
-  <meta property="og:url" content="https://rz943329-ui.github.io/zain-ai-site/">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <!-- Styling -->
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #f7f9fc;
+      background: #f7f9fc;
+      color: #222;
       margin: 0;
       padding: 0;
-      color: #222;
     }
-
     header {
       background: linear-gradient(90deg, #007bff, #00c6ff);
       color: white;
       text-align: center;
       padding: 2rem 1rem;
     }
+    header h1 { margin: 0; font-size: 2.5rem; }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
+    .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
     .post {
-      background: white;
-      border-radius: 12px;
+      background: white; border-radius: 12px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      margin-bottom: 30px;
-      overflow: hidden;
+      margin-bottom: 30px; overflow: hidden;
       transition: transform 0.2s ease;
     }
-
-    .post:hover {
-      transform: translateY(-5px);
-    }
-
-    .post img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-    }
-
-    .post-content {
-      padding: 20px;
-    }
-
-    .post h2 {
-      color: #007bff;
-      font-size: 1.5rem;
-    }
-
-    .post p {
-      color: #444;
-      line-height: 1.6;
-    }
-
-    .post a {
-      text-decoration: none;
-      color: #007bff;
-      font-weight: 600;
-    }
-
+    .post:hover { transform: translateY(-5px); }
+    .post img { width: 100%; height: 250px; object-fit: cover; }
+    .post-content { padding: 20px; }
+    .post h2 { color: #007bff; font-size: 1.5rem; }
+    .post p { color: #444; line-height: 1.6; }
+    .post a { text-decoration: none; color: #007bff; font-weight: 600; }
     .fiverr-btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background: #00b22d;
-      color: white;
-      border-radius: 6px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: 0.3s ease;
+      display: inline-block; margin-top: 15px; padding: 10px 20px;
+      background: #00b22d; color: white; border-radius: 6px;
+      font-weight: bold; text-decoration: none; transition: 0.3s;
     }
-
-    .fiverr-btn:hover {
-      background: #009b26;
-    }
+    .fiverr-btn:hover { background: #009b26; }
 
     footer {
-      background-color: #222;
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-      margin-top: 50px;
+      background: #222; color: white; text-align: center;
+      padding: 40px 20px; margin-top: 50px;
     }
+    footer a { color: #00c6ff; text-decoration: none; }
 
-    footer h3 {
-      margin-bottom: 10px;
-      font-size: 1.3rem;
-    }
-
-    footer p {
-      font-size: 0.95rem;
-      margin: 8px 0;
-    }
-
-    footer a {
-      color: #00c6ff;
-      text-decoration: none;
-    }
-
-    .social-links a {
-      color: #00c6ff;
-      margin: 0 10px;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    #fiverrPopup {
-      display: none;
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    /* Earning tracker styles */
+    #trackerBox {
+      max-width: 900px; margin: 40px auto; background: white;
+      border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       padding: 20px;
-      z-index: 999;
-      max-width: 300px;
-      text-align: center;
+    }
+    #trackerBox h2 { color: #007bff; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    table, th, td { border: 1px solid #ddd; }
+    th, td { padding: 10px; text-align: center; }
+    th { background: #007bff; color: white; }
+    tr:nth-child(even) { background: #f2f2f2; }
+    input, button { font-family: 'Poppins'; }
+    button {
+      background: #007bff; color: white; border: none;
+      padding: 8px 16px; border-radius: 8px; cursor: pointer;
+    }
+    button:hover { background: #0056b3; }
+
+    #autoEarning {
+      background: linear-gradient(90deg,#00b22d,#00c6ff);
+      color: white; text-align: center;
+      font-size: 1.2rem; padding: 15px; border-radius: 10px;
     }
 
-    #fiverrPopup h3 {
-      color: #007bff;
-      margin-bottom: 10px;
-    }
-
-    #closePopup {
-      background: #ff4d4d;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      padding: 5px 10px;
-      cursor: pointer;
-      float: right;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      .post img {
-        height: 200px;
-      }
-      #fiverrPopup {
-        bottom: 10px;
-        right: 10px;
-        max-width: 260px;
-      }
+    @media(max-width:768px){
+      header h1{font-size:2rem;}
+      .post img{height:200px;}
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <h1>Zain AI</h1>
-    <p>AI Tools • Earning Guides • Freelancing Tips</p>
-  </header>
+<header>
+  <h1>Zain AI</h1>
+  <p>AI Tools • Earning Guides • Freelancing Tips</p>
+</header>
 
-  <div class="container">
+<div class="container">
 
-    <!-- Blog 1–6 -->
-    <div class="post">
-      <img src="https://rz943329-ui.github.io/zain-ai-site/images/post1.jpg" alt="AI Earning Ideas">
-      <div class="post-content">
-        <h2><a href="post1.html">AI Se Paise Kaise Kamaye (2025 Guide)</a></h2>
-        <p>AI tools ke zariye real earning start karne ke best ideas, step-by-step Urdu guide ke sath.</p>
-        <a href="post1.html">Read More</a><br>
-        <a class="fiverr-btn" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Now</a>
-      </div>
+  <!-- Blog posts -->
+  <div class="post">
+    <img src="https://rz943329-ui.github.io/zain-ai-site/images/post1.jpg" alt="">
+    <div class="post-content">
+      <h2><a href="#">AI Se Paise Kaise Kamaye (2025 Guide)</a></h2>
+      <p>AI tools ke zariye real earning start karne ke best ideas.</p>
+      <a class="fiverr-btn fiverr-link" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Now</a>
     </div>
-
-    <div class="post">
-      <img src="https://rz943329-ui.github.io/zain-ai-site/images/post2.jpg" alt="Canva AI Tools">
-      <div class="post-content">
-        <h2><a href="post2.html">Canva AI Tools Se Free Earning Kaise Karein</a></h2>
-        <p>Learn how to use Canva’s AI features to earn money online with simple design work.</p>
-        <a href="post2.html">Read More</a><br>
-        <a class="fiverr-btn" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Now</a>
-      </div>
-    </div>
-
-    <div class="post">
-      <img src="https://rz943329-ui.github.io/zain-ai-site/images/post3.jpg" alt="AI Passive Income">
-      <div class="post-content">
-        <h2><a href="post3.html">AI Tools Se Passive Income Kaise Banaye</a></h2>
-        <p>Discover how to use automation and AI tools to create a steady stream of passive income.</p>
-        <a href="post3.html">Read More</a><br>
-        <a class="fiverr-btn" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Now</a>
-      </div>
-    </div>
-
-    <div class="post">
-      <img src="https://rz943329-ui.github.io/zain-ai-site/images/post4.jpg" alt="AI Freelancing Fiverr">
-      <div class="post-content">
-        <h2><a href="post4.html">AI Se Fiverr Aur Freelancing Par Paise Kaise Kamaye</a></h2>
-        <p>Use AI tools to earn on Fiverr and other freelancing platforms — no experience needed!</p>
-        <a href="post4.html">Read More</a><br>
-        <a class="fiverr-btn" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Now</a>
-      </div>
-    </div>
-
-    <div class="post">
-      <img src="https://rz943329-ui.github.io/zain-ai-site/images/post5.jpg" alt="AI Content Writing">
-      <div class="post-content">
-        <h2><a href="post5.html">AI Se Content Writing Aur Blog Se Earning</a></h2>
-        <p>Learn how to write blogs with AI and make money from blogging easily.</p>
-        <a href="post5.html">Read More</a><br>
-        <a class="fiverr-btn" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Now</a>
-      </div>
-    </div>
-
-    <div class="post">
-      <img src="https://rz943329-ui.github.io/zain-ai-site/images/post6.jpg" alt="AI Affiliate Marketing">
-      <div class="post-content">
-        <h2><a href="post6.html">AI Se Affiliate Marketing Start Kaise Karein</a></h2>
-        <p>Complete guide to earning through affiliate marketing using AI tools and automation.</p>
-        <a href="post6.html">Read More</a><br>
-        <a class="fiverr-btn" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Now</a>
-      </div>
-    </div>
-
-    <!-- Blog 7 -->
-    <div class="post">
-      <img src="https://rz943329-ui.github.io/zain-ai-site/images/post7.jpg" alt="Top Fiverr Services">
-      <div class="post-content">
-        <h2><a href="post7.html">Top Fiverr Services Using AI in 2025</a></h2>
-        <p>Discover the most profitable AI-based Fiverr gigs — from logo design to AI writing.</p>
-        <a href="post7.html">Read More</a><br>
-        <a class="fiverr-btn" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🚀 Explore Fiverr Gigs</a>
-      </div>
-    </div>
-
-    <!-- Blog 8 -->
-    <div class="post">
-      <img src="https://rz943329-ui.github.io/zain-ai-site/images/post8.jpg" alt="AI Tools Fiverr">
-      <div class="post-content">
-        <h2><a href="post8.html">Best AI Tools to Boost Fiverr Earnings</a></h2>
-        <p>Learn which AI tools can automate your Fiverr workflow and increase your income.</p>
-        <a href="post8.html">Read More</a><br>
-        <a class="fiverr-btn" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">💼 Boost Fiverr Income</a>
-      </div>
-    </div>
-
-    <!-- Earning Tracker Link -->
-    <div style="text-align:center; margin-top:40px;">
-      <a class="fiverr-btn" href="earning-tracker.html" target="_blank">📊 Open Fiverr Earning Tracker</a>
-    </div>
-
   </div>
 
-  <footer>
-    <h3>Contact & Support</h3>
-    <p>📧 Email: <a href="mailto:rz943329@gmail.com">rz943329@gmail.com</a></p>
-    <p>📩 Support: <a href="mailto:support@zainaihub.com">support@zainaihub.com</a></p>
-    <p>💼 Fiverr Affiliate Link: <a href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">Join Fiverr via Zain AI</a></p>
-    <div class="social-links">
-      <a href="https://facebook.com" target="_blank">Facebook</a> |
-      <a href="https://instagram.com" target="_blank">Instagram</a> |
-      <a href="https://youtube.com" target="_blank">YouTube</a>
+  <div class="post">
+    <img src="https://rz943329-ui.github.io/zain-ai-site/images/post2.jpg" alt="">
+    <div class="post-content">
+      <h2><a href="#">Canva AI Tools Se Free Earning Kaise Karein</a></h2>
+      <p>Learn how to use Canva’s AI features to earn money online.</p>
+      <a class="fiverr-btn fiverr-link" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Now</a>
     </div>
-    <p style="margin-top:15px;">© 2025 Zain AI. All rights reserved.</p>
-  </footer>
-
-  <!-- Fiverr Popup -->
-  <div id="fiverrPopup">
-    <button id="closePopup">X</button>
-    <h3>🚀 Start Freelancing Today!</h3>
-    <p>Join Fiverr and start earning with your skills — it’s free to join!</p>
-    <a class="fiverr-btn" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">Join Fiverr Now</a>
   </div>
 
-  <script>
-    const popup = document.getElementById("fiverrPopup");
-    const closeBtn = document.getElementById("closePopup");
+  <div class="post">
+    <img src="https://rz943329-ui.github.io/zain-ai-site/images/post3.jpg" alt="">
+    <div class="post-content">
+      <h2><a href="#">AI Tools Se Passive Income Kaise Banaye</a></h2>
+      <p>Use automation and AI to create steady income streams.</p>
+      <a class="fiverr-btn fiverr-link" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Now</a>
+    </div>
+  </div>
 
-    setTimeout(() => {
-      popup.style.display = "block";
-    }, 4000);
+  <div class="post">
+    <img src="https://rz943329-ui.github.io/zain-ai-site/images/post4.jpg" alt="">
+    <div class="post-content">
+      <h2><a href="#">AI Se Fiverr Aur Freelancing Par Paise Kaise Kamaye</a></h2>
+      <p>Use AI tools to earn on Fiverr — no experience needed!</p>
+      <a class="fiverr-btn fiverr-link" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Now</a>
+    </div>
+  </div>
 
-    closeBtn.addEventListener("click", () => {
-      popup.style.display = "none";
+  <div class="post">
+    <img src="https://rz943329-ui.github.io/zain-ai-site/images/post5.jpg" alt="">
+    <div class="post-content">
+      <h2><a href="#">AI Se Content Writing Aur Blog Se Earning</a></h2>
+      <p>Write blogs with AI and make money easily.</p>
+      <a class="fiverr-btn fiverr-link" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Now</a>
+    </div>
+  </div>
+
+  <div class="post">
+    <img src="https://rz943329-ui.github.io/zain-ai-site/images/post6.jpg" alt="">
+    <div class="post-content">
+      <h2><a href="#">AI Se Affiliate Marketing Start Kaise Karein</a></h2>
+      <p>Complete guide to earning through affiliate marketing using AI.</p>
+      <a class="fiverr-btn fiverr-link" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Now</a>
+    </div>
+  </div>
+
+  <!-- Add more posts easily by copying block above -->
+
+</div>
+
+<!-- Auto earning tracker -->
+<div id="trackerBox">
+  <h2>💰 Fiverr Affiliate Earning Tracker</h2>
+  <div id="autoEarning">Auto Earning : $<span id="earnValue">0.00</span></div>
+
+  <h3>Add Manual Record</h3>
+  <form id="earnForm">
+    <label>Date: </label><input type="date" id="date" required> 
+    <label>Clicks: </label><input type="number" id="clicks" required> 
+    <label>Regs: </label><input type="number" id="regs" required> 
+    <label>Earning ($): </label><input type="number" id="earning" step="0.01" required>
+    <button type="submit">Add Record</button>
+  </form>
+
+  <table id="earnTable">
+    <thead><tr><th>Date</th><th>Clicks</th><th>Regs</th><th>Earnings ($)</th></tr></thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<footer>
+  <p>💼 <a href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">Join Fiverr via Zain AI</a></p>
+  <p>📧 Support: <a href="mailto:support@zainaihub.com">support@zainaihub.com</a></p>
+  <p>© 2025 Zain AI. All rights reserved.</p>
+</footer>
+
+<script>
+  // Auto earning system
+  let earnings = parseFloat(localStorage.getItem("autoEarnings")) || 0;
+  const ratePerClick = 0.25;
+  const earnDisplay = document.getElementById("earnValue");
+
+  function updateEarningsDisplay(){
+    earnDisplay.textContent = earnings.toFixed(2);
+    localStorage.setItem("autoEarnings", earnings);
+  }
+  updateEarningsDisplay();
+
+  document.querySelectorAll(".fiverr-link").forEach(link=>{
+    link.addEventListener("click", ()=>{
+      earnings += ratePerClick;
+      updateEarningsDisplay();
     });
-  </script>
+  });
+
+  // Manual record form
+  const form = document.getElementById("earnForm");
+  const tbody = document.querySelector("#earnTable tbody");
+
+  form.addEventListener("submit", e=>{
+    e.preventDefault();
+    const date = document.getElementById("date").value;
+    const clicks = document.getElementById("clicks").value;
+    const regs = document.getElementById("regs").value;
+    const earning = parseFloat(document.getElementById("earning").value).toFixed(2);
+
+    const tr = document.createElement("tr");
+    tr.innerHTML = `<td>${date}</td><td>${clicks}</td><td>${regs}</td><td>$${earning}</td>`;
+    tbody.appendChild(tr);
+
+    form.reset();
+  });
+</script>
 </body>
 </html>
