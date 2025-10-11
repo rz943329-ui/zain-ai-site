@@ -86,6 +86,22 @@
       font-weight: 600;
     }
 
+    .fiverr-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #00b22d;
+      color: white;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .fiverr-btn:hover {
+      background: #009b26;
+    }
+
     footer {
       background-color: #222;
       color: white;
@@ -116,12 +132,47 @@
       text-decoration: none;
     }
 
+    /* Fiverr popup style */
+    #fiverrPopup {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      padding: 20px;
+      z-index: 999;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    #fiverrPopup h3 {
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    #closePopup {
+      background: #ff4d4d;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+      float: right;
+    }
+
     @media (max-width: 768px) {
       header h1 {
         font-size: 2rem;
       }
       .post img {
         height: 200px;
+      }
+      #fiverrPopup {
+        bottom: 10px;
+        right: 10px;
+        max-width: 260px;
       }
     }
   </style>
@@ -139,7 +190,8 @@
       <div class="post-content">
         <h2><a href="post1.html">AI Se Paise Kaise Kamaye (2025 Guide)</a></h2>
         <p>AI tools ke zariye real earning start karne ke best ideas, step-by-step Urdu guide ke sath.</p>
-        <a href="post1.html">Read More</a>
+        <a href="post1.html">Read More</a><br>
+        <a class="fiverr-btn" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Now</a>
       </div>
     </div>
 
@@ -148,7 +200,8 @@
       <div class="post-content">
         <h2><a href="post2.html">Canva AI Tools Se Free Earning Kaise Karein</a></h2>
         <p>Learn how to use Canva’s AI features to earn money online with simple design work.</p>
-        <a href="post2.html">Read More</a>
+        <a href="post2.html">Read More</a><br>
+        <a class="fiverr-btn" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Now</a>
       </div>
     </div>
 
@@ -157,7 +210,8 @@
       <div class="post-content">
         <h2><a href="post3.html">AI Tools Se Passive Income Kaise Banaye</a></h2>
         <p>Discover how to use automation and AI tools to create a steady stream of passive income.</p>
-        <a href="post3.html">Read More</a>
+        <a href="post3.html">Read More</a><br>
+        <a class="fiverr-btn" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Now</a>
       </div>
     </div>
 
@@ -166,7 +220,8 @@
       <div class="post-content">
         <h2><a href="post4.html">AI Se Fiverr Aur Freelancing Par Paise Kaise Kamaye</a></h2>
         <p>Use AI tools to earn on Fiverr and other freelancing platforms — no experience needed!</p>
-        <a href="post4.html">Read More</a>
+        <a href="post4.html">Read More</a><br>
+        <a class="fiverr-btn" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Now</a>
       </div>
     </div>
 
@@ -175,7 +230,8 @@
       <div class="post-content">
         <h2><a href="post5.html">AI Se Content Writing Aur Blog Se Earning</a></h2>
         <p>Learn how to write blogs with AI and make money from blogging easily.</p>
-        <a href="post5.html">Read More</a>
+        <a href="post5.html">Read More</a><br>
+        <a class="fiverr-btn" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Now</a>
       </div>
     </div>
 
@@ -184,7 +240,8 @@
       <div class="post-content">
         <h2><a href="post6.html">AI Se Affiliate Marketing Start Kaise Karein</a></h2>
         <p>Complete guide to earning through affiliate marketing using AI tools and automation.</p>
-        <a href="post6.html">Read More</a>
+        <a href="post6.html">Read More</a><br>
+        <a class="fiverr-btn" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Now</a>
       </div>
     </div>
 
@@ -202,5 +259,26 @@
     </div>
     <p style="margin-top:15px;">© 2025 Zain AI. All rights reserved.</p>
   </footer>
+
+  <!-- Fiverr Popup -->
+  <div id="fiverrPopup">
+    <button id="closePopup">X</button>
+    <h3>🚀 Start Freelancing Today!</h3>
+    <p>Join Fiverr and start earning with your skills — it’s free to join!</p>
+    <a class="fiverr-btn" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">Join Fiverr Now</a>
+  </div>
+
+  <script>
+    const popup = document.getElementById("fiverrPopup");
+    const closeBtn = document.getElementById("closePopup");
+
+    setTimeout(() => {
+      popup.style.display = "block";
+    }, 4000);
+
+    closeBtn.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+  </script>
 </body>
 </html>
