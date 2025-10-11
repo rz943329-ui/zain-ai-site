@@ -56,7 +56,9 @@
       transition: transform 0.2s ease;
     }
 
-    .post:hover { transform: translateY(-5px); }
+    .post:hover {
+      transform: translateY(-5px);
+    }
 
     .post img {
       width: 100%;
@@ -64,7 +66,9 @@
       object-fit: cover;
     }
 
-    .post-content { padding: 20px; }
+    .post-content {
+      padding: 20px;
+    }
 
     .post h2 {
       color: #007bff;
@@ -76,18 +80,27 @@
       line-height: 1.6;
     }
 
-    .btn-fiverr {
-      display: inline-block;
-      background-color: #1dbf73;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 8px;
+    .post a {
       text-decoration: none;
-      font-weight: bold;
-      margin-top: 10px;
+      color: #007bff;
+      font-weight: 600;
     }
 
-    .btn-fiverr:hover { background-color: #17a763; }
+    .fiverr-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #00b22d;
+      color: white;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .fiverr-btn:hover {
+      background: #009b26;
+    }
 
     footer {
       background-color: #222;
@@ -95,6 +108,16 @@
       text-align: center;
       padding: 40px 20px;
       margin-top: 50px;
+    }
+
+    footer h3 {
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    footer p {
+      font-size: 0.95rem;
+      margin: 8px 0;
     }
 
     footer a {
@@ -109,34 +132,47 @@
       text-decoration: none;
     }
 
-    /* Fiverr Popup */
-    .popup {
+    #fiverrPopup {
+      display: none;
       position: fixed;
-      bottom: 20px;
-      right: 20px;
+      bottom: 30px;
+      right: 30px;
       background: white;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
       padding: 20px;
+      z-index: 999;
       max-width: 300px;
-      z-index: 1000;
-      display: none;
+      text-align: center;
     }
 
-    .popup h3 { margin-top: 0; color: #007bff; }
-    .popup button {
-      background: #1dbf73;
-      border: none;
+    #fiverrPopup h3 {
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    #closePopup {
+      background: #ff4d4d;
       color: white;
-      padding: 10px 15px;
-      border-radius: 6px;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
       cursor: pointer;
-      font-weight: bold;
+      float: right;
     }
 
     @media (max-width: 768px) {
-      header h1 { font-size: 2rem; }
-      .post img { height: 200px; }
+      header h1 {
+        font-size: 2rem;
+      }
+      .post img {
+        height: 200px;
+      }
+      #fiverrPopup {
+        bottom: 10px;
+        right: 10px;
+        max-width: 260px;
+      }
     }
   </style>
 </head>
@@ -149,58 +185,92 @@
 
   <div class="container">
 
+    <!-- Blog 1–6 -->
     <div class="post">
-      <img src="images/post1.jpg" alt="AI Earning Ideas">
+      <img src="https://rz943329-ui.github.io/zain-ai-site/images/post1.jpg" alt="AI Earning Ideas">
       <div class="post-content">
-        <h2>AI Se Paise Kaise Kamaye (2025 Guide)</h2>
+        <h2><a href="post1.html">AI Se Paise Kaise Kamaye (2025 Guide)</a></h2>
         <p>AI tools ke zariye real earning start karne ke best ideas, step-by-step Urdu guide ke sath.</p>
-        <a class="btn-fiverr" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Now</a>
+        <a href="post1.html">Read More</a><br>
+        <a class="fiverr-btn" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Now</a>
       </div>
     </div>
 
     <div class="post">
-      <img src="images/post2.jpg" alt="AI Tools">
+      <img src="https://rz943329-ui.github.io/zain-ai-site/images/post2.jpg" alt="Canva AI Tools">
       <div class="post-content">
-        <h2>Best Free AI Tools for Beginners</h2>
-        <p>Janeye un top AI tools ke bare me jo beginners ke liye free aur powerful hain.</p>
-        <a class="btn-fiverr" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Try Fiverr Gigs</a>
+        <h2><a href="post2.html">Canva AI Tools Se Free Earning Kaise Karein</a></h2>
+        <p>Learn how to use Canva’s AI features to earn money online with simple design work.</p>
+        <a href="post2.html">Read More</a><br>
+        <a class="fiverr-btn" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Now</a>
       </div>
     </div>
 
     <div class="post">
-      <img src="images/post3.jpg" alt="AI Fiverr">
+      <img src="https://rz943329-ui.github.io/zain-ai-site/images/post3.jpg" alt="AI Passive Income">
       <div class="post-content">
-        <h2>How to Earn from Fiverr Using AI</h2>
-        <p>Fiverr par AI ke zariye gigs create kar ke paisa kamane ka simple tareeqa.</p>
-        <a class="btn-fiverr" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Start Earning</a>
+        <h2><a href="post3.html">AI Tools Se Passive Income Kaise Banaye</a></h2>
+        <p>Discover how to use automation and AI tools to create a steady stream of passive income.</p>
+        <a href="post3.html">Read More</a><br>
+        <a class="fiverr-btn" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Now</a>
       </div>
     </div>
 
     <div class="post">
-      <img src="images/post4.jpg" alt="AI Websites">
+      <img src="https://rz943329-ui.github.io/zain-ai-site/images/post4.jpg" alt="AI Freelancing Fiverr">
       <div class="post-content">
-        <h2>AI Websites for Students</h2>
-        <p>Top free AI tools jo students aur learners ke liye helpful hain.</p>
-        <a class="btn-fiverr" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Explore Fiverr</a>
+        <h2><a href="post4.html">AI Se Fiverr Aur Freelancing Par Paise Kaise Kamaye</a></h2>
+        <p>Use AI tools to earn on Fiverr and other freelancing platforms — no experience needed!</p>
+        <a href="post4.html">Read More</a><br>
+        <a class="fiverr-btn" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Now</a>
       </div>
     </div>
 
     <div class="post">
-      <img src="images/post5.jpg" alt="ChatGPT Tips">
+      <img src="https://rz943329-ui.github.io/zain-ai-site/images/post5.jpg" alt="AI Content Writing">
       <div class="post-content">
-        <h2>ChatGPT Advanced Tricks for Freelancers</h2>
-        <p>ChatGPT ke advanced features se apne freelancing work ko fast banayein.</p>
-        <a class="btn-fiverr" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Use Fiverr Tools</a>
+        <h2><a href="post5.html">AI Se Content Writing Aur Blog Se Earning</a></h2>
+        <p>Learn how to write blogs with AI and make money from blogging easily.</p>
+        <a href="post5.html">Read More</a><br>
+        <a class="fiverr-btn" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Now</a>
       </div>
     </div>
 
     <div class="post">
-      <img src="images/post6.jpg" alt="AI Apps">
+      <img src="https://rz943329-ui.github.io/zain-ai-site/images/post6.jpg" alt="AI Affiliate Marketing">
       <div class="post-content">
-        <h2>Top AI Apps That Pay You</h2>
-        <p>AI-based earning apps jo aapko directly reward aur income deti hain.</p>
-        <a class="btn-fiverr" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Deals</a>
+        <h2><a href="post6.html">AI Se Affiliate Marketing Start Kaise Karein</a></h2>
+        <p>Complete guide to earning through affiliate marketing using AI tools and automation.</p>
+        <a href="post6.html">Read More</a><br>
+        <a class="fiverr-btn" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🔥 Join Fiverr Now</a>
       </div>
+    </div>
+
+    <!-- Blog 7 -->
+    <div class="post">
+      <img src="https://rz943329-ui.github.io/zain-ai-site/images/post7.jpg" alt="Top Fiverr Services">
+      <div class="post-content">
+        <h2><a href="post7.html">Top Fiverr Services Using AI in 2025</a></h2>
+        <p>Discover the most profitable AI-based Fiverr gigs — from logo design to AI writing.</p>
+        <a href="post7.html">Read More</a><br>
+        <a class="fiverr-btn" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">🚀 Explore Fiverr Gigs</a>
+      </div>
+    </div>
+
+    <!-- Blog 8 -->
+    <div class="post">
+      <img src="https://rz943329-ui.github.io/zain-ai-site/images/post8.jpg" alt="AI Tools Fiverr">
+      <div class="post-content">
+        <h2><a href="post8.html">Best AI Tools to Boost Fiverr Earnings</a></h2>
+        <p>Learn which AI tools can automate your Fiverr workflow and increase your income.</p>
+        <a href="post8.html">Read More</a><br>
+        <a class="fiverr-btn" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">💼 Boost Fiverr Income</a>
+      </div>
+    </div>
+
+    <!-- Earning Tracker Link -->
+    <div style="text-align:center; margin-top:40px;">
+      <a class="fiverr-btn" href="earning-tracker.html" target="_blank">📊 Open Fiverr Earning Tracker</a>
     </div>
 
   </div>
@@ -219,17 +289,24 @@
   </footer>
 
   <!-- Fiverr Popup -->
-  <div class="popup" id="popup">
-    <h3>💰 Want to Earn with Fiverr?</h3>
-    <p>Join Fiverr today and start your earning journey with Zain AI’s affiliate link!</p>
-    <button onclick="window.open('https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace','_blank')">Join Now</button>
+  <div id="fiverrPopup">
+    <button id="closePopup">X</button>
+    <h3>🚀 Start Freelancing Today!</h3>
+    <p>Join Fiverr and start earning with your skills — it’s free to join!</p>
+    <a class="fiverr-btn" href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">Join Fiverr Now</a>
   </div>
 
   <script>
-    window.onload = function() {
-      setTimeout(() => { document.getElementById("popup").style.display = "block"; }, 5000);
-      setTimeout(() => { document.getElementById("popup").style.display = "none"; }, 20000);
-    };
+    const popup = document.getElementById("fiverrPopup");
+    const closeBtn = document.getElementById("closePopup");
+
+    setTimeout(() => {
+      popup.style.display = "block";
+    }, 4000);
+
+    closeBtn.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
   </script>
 </body>
 </html>
