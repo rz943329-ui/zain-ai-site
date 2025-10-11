@@ -3,189 +3,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zain AI | Learn AI Tools & Earn Online</title>
-
-  <!-- ✅ SEO & Meta Tags -->
-  <meta name="title" content="Zain AI | Learn AI Tools and Earning Ideas">
-  <meta name="description" content="Zain AI par seekhein AI tools, earning methods aur free AI websites bina investment ke. Real earning ideas aur AI knowledge in Urdu.">
-  <meta name="keywords" content="AI se earning, AI tools, Zain AI, ChatGPT, Canva, Fiverr, Blogging, AI blog Pakistan, online income">
-  <meta name="author" content="Muhammad Zain">
-
-  <!-- ✅ Social Preview -->
-  <meta property="og:title" content="Zain AI | AI se Earning ka Asan Tareeqa">
-  <meta property="og:description" content="AI tools aur real earning ideas seekhein bina investment ke. Start your AI journey with Zain AI.">
-  <meta property="og:image" content="https://rz943329-ui.github.io/zain-ai-site/logo.png">
-  <meta property="og:url" content="https://rz943329-ui.github.io/zain-ai-site/">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <!-- ✅ CSS -->
+  <title>Zain AI Blog – Learn & Earn with Artificial Intelligence</title>
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      background: #f9fafb;
-      color: #222;
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Poppins',sans-serif;background:#f9fafb;color:#1f2937;line-height:1.6;}
+    header{background:#111827;color:#fff;padding:20px 30px;text-align:center;box-shadow:0 3px 10px rgba(0,0,0,0.1);}
+    header h1{font-size:1.8rem;}
+    .hero{
+      background:url('https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      color:white;text-align:center;padding:100px 20px;
+      position:relative;
     }
-
-    header {
-      background: #111827;
-      color: white;
-      padding: 15px 30px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    .hero::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);}
+    .hero h2{position:relative;z-index:1;font-size:2.2rem;margin-bottom:10px;}
+    .hero p{position:relative;z-index:1;font-size:1.1rem;}
+    .container{max-width:1100px;margin:60px auto;padding:0 20px;}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;}
+    .card{
+      background:white;border-radius:15px;overflow:hidden;
+      box-shadow:0 4px 15px rgba(0,0,0,0.08);transition:transform 0.3s ease;
     }
-    header h1 {
-      margin: 0;
-      font-size: 1.4rem;
+    .card:hover{transform:translateY(-5px);}
+    .card img{width:100%;height:200px;object-fit:cover;}
+    .card-content{padding:20px;}
+    .card-content h3{color:#111827;font-size:1.2rem;margin-bottom:10px;}
+    .card-content p{font-size:0.95rem;margin-bottom:15px;color:#4b5563;}
+    .card-content a{
+      display:inline-block;background:#2563eb;color:white;text-decoration:none;
+      padding:8px 15px;border-radius:8px;font-weight:500;
     }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 15px;
-      font-weight: 500;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 70px 20px;
-      background: linear-gradient(135deg, #1f2937, #111827);
-      color: white;
-    }
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      color: #d1d5db;
-    }
-    .hero button {
-      margin-top: 20px;
-      padding: 10px 25px;
-      background: #3b82f6;
-      border: none;
-      color: white;
-      border-radius: 8px;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-    .hero button:hover {
-      background: #2563eb;
-    }
-
-    .posts {
-      max-width: 1000px;
-      margin: 60px auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-      padding: 0 15px;
-    }
-    .post {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      padding: 20px;
-      transition: transform 0.2s ease;
-    }
-    .post:hover {
-      transform: translateY(-5px);
-    }
-    .post h2 {
-      color: #111827;
-      font-size: 1.2rem;
-    }
-    .post p {
-      color: #4b5563;
-      font-size: 0.95rem;
-    }
-    .post a {
-      color: #2563eb;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    footer {
-      background: #111827;
-      color: #d1d5db;
-      text-align: center;
-      padding: 25px;
-      margin-top: 50px;
-    }
-    footer a {
-      color: #60a5fa;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
+    .card-content a:hover{background:#1e40af;}
+    footer{text-align:center;padding:25px;background:#111827;color:white;margin-top:50px;}
+    footer p{font-size:0.9rem;}
+    @media(max-width:600px){
+      .hero{padding:70px 15px;}
+      .hero h2{font-size:1.6rem;}
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Zain AI</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Blogs</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
+    <h1>Zain AI Blog</h1>
+    <p>Learn | Create | Earn with Artificial Intelligence 🚀</p>
   </header>
 
   <section class="hero">
-    <h2>Learn AI Tools & Earn Online</h2>
-    <p>AI se earning seekho — simple steps aur free tools ke sath 2025 me apna career start karo.</p>
-    <button onclick="window.location.href='#blogs'">Start Learning</button>
+    <h2>Start Your AI Journey Today</h2>
+    <p>Explore AI tools, freelancing guides & real earning methods</p>
   </section>
 
-  <section id="blogs" class="posts">
-    <div class="post">
-      <h2><a href="post1.html">Top 10 Free AI Tools for Beginners (2025)</a></h2>
-      <p>Best AI tools jo aapko bina investment ke earning start karne me madad karenge.</p>
-      <a href="post1.html">Read More</a>
+  <div class="container">
+    <div class="grid">
+      <!-- Blog 1 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1000&q=80" alt="AI Blogging">
+        <div class="card-content">
+          <h3>How to Start AI Blogging (2025 Guide)</h3>
+          <p>Learn how to use ChatGPT and Canva to create AI-powered blogs and earn online.</p>
+          <a href="post1.html">Read More</a>
+        </div>
+      </div>
+      <!-- Blog 2 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1000&q=80" alt="AI Blogging">
+        <div class="card-content">
+          <h3>AI Se Blogging Start Karne Ka Best Tareeqa</h3>
+          <p>Follow this step-by-step guide to start AI blogging easily in 2025.</p>
+          <a href="post2.html">Read More</a>
+        </div>
+      </div>
+      <!-- Blog 3 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1638202993928-7267aad84c2b?auto=format&fit=crop&w=1000&q=80" alt="AI Passive Income">
+        <div class="card-content">
+          <h3>AI Tools Se Passive Income Kaise Banaye</h3>
+          <p>Use AI automation tools to create multiple sources of online income.</p>
+          <a href="post3.html">Read More</a>
+        </div>
+      </div>
+      <!-- Blog 4 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=80" alt="Freelancing">
+        <div class="card-content">
+          <h3>AI Se Fiverr Aur Freelancing Par Earning</h3>
+          <p>Discover how to earn on Fiverr & Upwork using AI tools like ChatGPT and Canva.</p>
+          <a href="post4.html">Read More</a>
+        </div>
+      </div>
+      <!-- Blog 5 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1553484771-371a605b060b?auto=format&fit=crop&w=1000&q=80" alt="Affiliate Marketing">
+        <div class="card-content">
+          <h3>AI Affiliate Marketing Se Real Earning</h3>
+          <p>Learn to promote AI tools and earn passive income through affiliate links.</p>
+          <a href="post5.html">Read More</a>
+        </div>
+      </div>
+      <!-- Blog 6 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1641674238796-d81c3b2e0156?auto=format&fit=crop&w=1000&q=80" alt="Top AI Websites">
+        <div class="card-content">
+          <h3>Top 10 AI Websites For Real Earning</h3>
+          <p>Explore the best AI platforms that give you genuine income opportunities in 2025.</p>
+          <a href="post6.html">Read More</a>
+        </div>
+      </div>
     </div>
-
-    <div class="post">
-      <h2><a href="post2.html">AI Blogging Se Paise Kaise Kamaye</a></h2>
-      <p>Step-by-step guide for beginners to earn online with AI writing and content tools.</p>
-      <a href="post2.html">Read More</a>
-    </div>
-
-    <div class="post">
-      <h2><a href="post3.html">AI Tools Se Passive Income Kaise Banaye – 2025 Guide</a></h2>
-      <p>Learn easy passive income methods using smart AI tools without big investment.</p>
-      <a href="post3.html">Read More</a>
-    </div>
-
-    <div class="post">
-      <h2><a href="post4.html">Fiverr & Freelancing with AI Tools</a></h2>
-      <p>Use AI to boost your freelancing income — perfect for beginners.</p>
-      <a href="post4.html">Read More</a>
-    </div>
-
-    <div class="post">
-      <h2><a href="post5.html">AI Website Banakar Earning Kaise Karein</a></h2>
-      <p>Build your own AI-based website and start monetizing it easily.</p>
-      <a href="post5.html">Read More</a>
-    </div>
-
-    <div class="post">
-      <h2><a href="post6.html">Future of AI Jobs & Online Work in 2025</a></h2>
-      <p>Know which AI jobs will be in demand and how to prepare for them today.</p>
-      <a href="post6.html">Read More</a>
-    </div>
-  </section>
+  </div>
 
   <footer>
-    <p>© 2025 Zain AI | All Rights Reserved</p>
-    <p>Follow on <a href="#">YouTube</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a></p>
+    <p>© 2025 Zain AI Blog | Built with 💙 using HTML & AI</p>
   </footer>
 </body>
 </html>
+
+    
+     
+ 
 
 
    
