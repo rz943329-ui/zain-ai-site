@@ -12,167 +12,69 @@
   <meta name="keywords" content="AI se earning, AI tools, free AI earning, Zain AI, AI blog, ChatGPT, Canva, Fiverr affiliate, AI video earning, AI graphic design">
   <meta name="author" content="Muhammad Zain">
 
-  <!-- Social Media Preview -->
-  <meta property="og:title" content="Zain AI | AI se Earning ka Asan Tareeqa">
-  <meta property="og:description" content="AI tools aur real earning ideas seekhein bina investment ke. Start your AI journey with Zain AI.">
-  <meta property="og:image" content="https://rz943329-ui.github.io/zain-ai-site/logo.png">
-  <meta property="og:url" content="https://rz943329-ui.github.io/zain-ai-site/">
-  <meta name="twitter:card" content="summary_large_image">
-
   <!-- Styling -->
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f7f9fc;
-      margin: 0;
-      padding: 0;
-      color: #222;
-    }
+    body { font-family: 'Poppins', sans-serif; background:#f7f9fc; margin:0; color:#222; }
+    header { background:linear-gradient(90deg,#007bff,#00c6ff); color:#fff; text-align:center; padding:2rem 1rem; }
+    header h1 { margin:0; font-size:2.5rem; }
 
-    header {
-      background: linear-gradient(90deg, #007bff, #00c6ff);
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
+    .container { max-width:1000px; margin:40px auto; padding:0 20px; }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
+    .post { background:#fff; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.1); margin-bottom:30px; overflow:hidden; }
+    .post img { width:100%; height:250px; object-fit:cover; }
+    .post-content { padding:20px; }
+    .post h2 { color:#007bff; font-size:1.5rem; margin:0; }
+    .post p { color:#444; line-height:1.6; }
+    .post a { text-decoration:none; color:#007bff; font-weight:600; }
 
-    .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
+    /* Affiliate CTA */
+    .affiliate-cta { background:#fff7ed; border-left:4px solid #ff8a00; padding:15px; border-radius:8px; margin:20px 0; }
+    .affiliate-cta a { color:#007bff; font-weight:600; text-decoration:none; }
 
-    .post {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      margin-bottom: 30px;
-      overflow: hidden;
-      transition: transform 0.2s ease;
-    }
+    /* Tools Grid */
+    #tools { background:#f3f4f6; text-align:center; padding:40px 20px; }
+    #tools h2 { color:#111827; }
+    .tool-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; max-width:1000px; margin:20px auto; }
+    .tool { background:#fff; padding:18px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.06); }
+    .tool img { width:100%; border-radius:8px; height:150px; object-fit:cover; }
+    .tool h3 { margin:10px 0 5px; }
+    .tool p { color:#555; font-size:0.95rem; }
+    .tool a { display:inline-block; margin-top:8px; background:#2563eb; color:#fff; padding:8px 14px; border-radius:8px; text-decoration:none; }
 
-    .post:hover {
-      transform: translateY(-5px);
-    }
+    footer { background:#222; color:#fff; text-align:center; padding:40px 20px; margin-top:50px; }
+    footer a { color:#00c6ff; text-decoration:none; }
+    .social-links a { color:#00c6ff; margin:0 10px; font-weight:bold; text-decoration:none; }
 
-    .post img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-    }
+    #tracker { text-align:center; background:#e9f4ff; padding:20px; margin:30px 0; border-radius:10px; font-size:1.1rem; }
 
-    .post-content {
-      padding: 20px;
-    }
+    #fiverr-popup { position:fixed; bottom:20px; right:20px; background:#fff; border:2px solid #007bff;
+      box-shadow:0 4px 10px rgba(0,0,0,0.2); border-radius:12px; padding:20px; width:300px; display:none; z-index:1000; }
+    #fiverr-popup button { background:#007bff; color:#fff; border:none; padding:10px 15px; margin-top:10px; cursor:pointer; border-radius:8px; width:100%; }
 
-    .post h2 {
-      color: #007bff;
-      font-size: 1.5rem;
-    }
-
-    .post p {
-      color: #444;
-      line-height: 1.6;
-    }
-
-    .post a {
-      text-decoration: none;
-      color: #007bff;
-      font-weight: 600;
-    }
-
-    footer {
-      background-color: #222;
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-      margin-top: 50px;
-    }
-
-    footer a {
-      color: #00c6ff;
-      text-decoration: none;
-    }
-
-    .social-links a {
-      color: #00c6ff;
-      margin: 0 10px;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    /* Fiverr Popup */
-    #fiverr-popup {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: white;
-      border: 2px solid #007bff;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      border-radius: 12px;
-      padding: 20px;
-      width: 300px;
-      display: none;
-      z-index: 1000;
-    }
-
-    #fiverr-popup h4 {
-      margin: 0;
-      color: #007bff;
-    }
-
-    #fiverr-popup button {
-      background: #007bff;
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      margin-top: 10px;
-      cursor: pointer;
-      border-radius: 8px;
-      width: 100%;
-    }
-
-    #tracker {
-      text-align: center;
-      background: #e9f4ff;
-      padding: 20px;
-      margin: 30px 0;
-      border-radius: 10px;
-      font-size: 1.1rem;
-    }
-
-    @media (max-width: 768px) {
-      header h1 { font-size: 2rem; }
-      .post img { height: 200px; }
-    }
+    @media (max-width:768px) { header h1 { font-size:2rem; } .post img { height:200px; } }
   </style>
 </head>
 
 <body>
+
+  <!-- HEADER -->
   <header>
     <h1>Zain AI</h1>
     <p>AI Tools • Earning Guides • Freelancing Tips</p>
   </header>
 
   <div class="container">
-
-    <!-- Earning Tracker -->
+    <!-- Tracker -->
     <div id="tracker">
-      💰 Estimated Total Clicks: <span id="clicks">0</span> | Earnings: $<span id="earnings">0.00</span>
+      💰 Estimated Clicks: <span id="clicks">0</span> | Earnings: $<span id="earnings">0.00</span>
     </div>
 
-    <!-- Blog Posts -->
+    <!-- POSTS -->
     <div class="post">
       <img src="images/post1.jpg" alt="AI Earning Ideas">
       <div class="post-content">
         <h2><a href="post1.html">AI Se Paise Kaise Kamaye (2025 Guide)</a></h2>
         <p>AI tools ke zariye earning start karne ke best ideas. Complete Urdu guide ke sath.</p>
-        <a href="post1.html">Read More</a>
       </div>
     </div>
 
@@ -181,7 +83,6 @@
       <div class="post-content">
         <h2><a href="post2.html">Canva AI Tools Se Free Earning Kaise Karein</a></h2>
         <p>Canva AI ke zariye design se paisa kamao. Easy earning method.</p>
-        <a href="post2.html">Read More</a>
       </div>
     </div>
 
@@ -190,7 +91,6 @@
       <div class="post-content">
         <h2><a href="post3.html">AI Tools Se Passive Income Kaise Banaye</a></h2>
         <p>Automation aur AI se regular earning system create karo.</p>
-        <a href="post3.html">Read More</a>
       </div>
     </div>
 
@@ -199,7 +99,6 @@
       <div class="post-content">
         <h2><a href="post4.html">AI Se Fiverr Aur Freelancing Par Paise Kaise Kamaye</a></h2>
         <p>Fiverr par AI gigs se income kaise start karein — No skills required!</p>
-        <a href="post4.html">Read More</a>
       </div>
     </div>
 
@@ -208,7 +107,6 @@
       <div class="post-content">
         <h2><a href="post5.html">AI Se Content Writing Aur Blog Se Earning</a></h2>
         <p>AI ke tools se articles likho aur blog se paisa kamao.</p>
-        <a href="post5.html">Read More</a>
       </div>
     </div>
 
@@ -217,17 +115,14 @@
       <div class="post-content">
         <h2><a href="post6.html">AI Se Affiliate Marketing Start Kaise Karein</a></h2>
         <p>AI aur Fiverr affiliate ke zariye passive income ka naya tareeqa.</p>
-        <a href="post6.html">Read More</a>
       </div>
     </div>
 
-    <!-- New Posts -->
     <div class="post">
       <img src="images/post7.jpg" alt="AI Video Creation">
       <div class="post-content">
         <h2><a href="post7.html">AI Video Creation Se Earning Kaise Karein</a></h2>
         <p>AI tools se YouTube aur Fiverr par video creation gigs se paisa kamao.</p>
-        <a href="post7.html">Read More</a>
       </div>
     </div>
 
@@ -236,55 +131,86 @@
       <div class="post-content">
         <h2><a href="post8.html">AI Graphic Design Tools Se Real Earning</a></h2>
         <p>AI design tools jaise Leonardo aur Canva se creative earning shuru karo.</p>
-        <a href="post8.html">Read More</a>
       </div>
+    </div>
+
+    <!-- ✅ AFFILIATE CTA ADDED -->
+    <div class="affiliate-cta">
+      <strong>Start Earning Today:</strong>
+      <p>Want fast results? Try this recommended tool: 
+        <a href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">
+          Join Fiverr via Zain AI →
+        </a>
+      </p>
     </div>
 
   </div>
 
-  <!-- Fiverr Popup -->
-  <div id="fiverr-popup">
-    <h4>🔥 Start Earning with Fiverr!</h4>
-    <p>Join Fiverr now and start making money using your skills or AI tools.</p>
-    <button id="fiverrBtn">Join Fiverr</button>
-  </div>
+  <!-- ✅ TOOLS SECTION -->
+  <section id="tools">
+    <h2>Recommended Tools (Try & Earn)</h2>
+    <div class="tool-grid">
 
-  <!-- Footer -->
+      <div class="tool">
+        <img src="images/canva.jpg" alt="Canva">
+        <h3>Canva (Design)</h3>
+        <p>Create thumbnails, posts, & templates fast.</p>
+        <a href="https://partner.canva.com/c/YOUR_ID" target="_blank">Use Canva</a>
+      </div>
+
+      <div class="tool">
+        <img src="images/fiverr.jpg" alt="Fiverr">
+        <h3>Fiverr (Freelance)</h3>
+        <p>Start freelancing gigs & earn fast.</p>
+        <a href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">Join Fiverr</a>
+      </div>
+
+      <div class="tool">
+        <img src="images/digistore.jpg" alt="Digistore">
+        <h3>Top AI Courses</h3>
+        <p>Courses & tools to scale your income.</p>
+        <a href="https://www.digistore24.com/redir/YOUR_CODE/YOURID/" target="_blank">Get Course</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
     <h3>Contact & Support</h3>
     <p>📧 Email: <a href="mailto:rz943329@gmail.com">rz943329@gmail.com</a></p>
-    <p>📩 Support: <a href="mailto:support@zainaihub.com">support@zainaihub.com</a></p>
-    <p>💼 Fiverr Affiliate Link: <a href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">Join Fiverr via Zain AI</a></p>
+    <p>💼 Fiverr Affiliate: <a href="https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace" target="_blank">Join Fiverr via Zain AI</a></p>
     <div class="social-links">
-      <a href="https://facebook.com" target="_blank">Facebook</a> |
-      <a href="https://instagram.com" target="_blank">Instagram</a> |
-      <a href="https://youtube.com" target="_blank">YouTube</a>
+      <a href="https://facebook.com">Facebook</a> | <a href="https://instagram.com">Instagram</a> | <a href="https://youtube.com">YouTube</a>
     </div>
     <p style="margin-top:15px;">© 2025 Zain AI. All rights reserved.</p>
   </footer>
 
-  <!-- Scripts -->
+  <!-- SCRIPT -->
   <script>
     // Fiverr Popup
     setTimeout(() => {
-      document.getElementById('fiverr-popup').style.display = 'block';
+      document.getElementById('fiverr-popup')?.style.display = 'block';
     }, 5000);
 
-    document.getElementById('fiverrBtn').onclick = function() {
+    document.getElementById('fiverrBtn')?.addEventListener('click', () => {
       window.open("https://go.fiverr.com/visit/?bta=1147859&brand=fiverrmarketplace", "_blank");
       incrementEarnings();
-      document.getElementById('fiverr-popup').style.display = 'none';
-    };
+    });
 
-    // Simple Earning Tracker
-    let clicks = 0;
-    let earnings = 0;
+    // Earning Counter
+    let clicks = 0, earnings = 0;
     function incrementEarnings() {
-      clicks++;
-      earnings += 0.25;
+      clicks++; earnings += 0.25;
       document.getElementById('clicks').textContent = clicks;
       document.getElementById('earnings').textContent = earnings.toFixed(2);
     }
   </script>
 </body>
 </html>
+
+ 
+ 
+
+
+    
